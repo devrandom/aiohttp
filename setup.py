@@ -85,8 +85,9 @@ args = dict(
     tests_require=tests_require,
     test_suite='nose.collector',
     include_package_data=True,
-    ext_modules=extensions,
-    cmdclass=dict(build_ext=ve_build_ext))
+    #ext_modules=extensions,
+    #cmdclass=dict(build_ext=ve_build_ext)
+    )
 
 try:
     setup(**args)
